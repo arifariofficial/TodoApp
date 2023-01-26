@@ -1,4 +1,4 @@
-package com.integrify.TodoApp.controller.auth;
+package com.integrify.TodoApp.models;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
@@ -11,7 +11,7 @@ import org.springframework.lang.NonNull;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class SignupRequest {
+public class SigninRequest {
     @NotEmpty
     @NonNull
     private String email;

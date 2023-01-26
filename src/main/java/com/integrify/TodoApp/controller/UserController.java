@@ -1,13 +1,12 @@
 package com.integrify.TodoApp.controller;
 
-import com.integrify.TodoApp.controller.auth.AuthResponse;
-import com.integrify.TodoApp.controller.auth.PasswordChangeRequest;
-import com.integrify.TodoApp.controller.auth.SigninRequest;
-import com.integrify.TodoApp.controller.auth.SignupRequest;
+import com.integrify.TodoApp.models.AuthResponse;
+import com.integrify.TodoApp.models.PasswordChangeRequest;
+import com.integrify.TodoApp.models.SigninRequest;
+import com.integrify.TodoApp.models.SignupRequest;
 import com.integrify.TodoApp.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;

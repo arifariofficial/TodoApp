@@ -1,9 +1,9 @@
 package com.integrify.TodoApp.services;
 
-import com.integrify.TodoApp.controller.auth.AuthResponse;
-import com.integrify.TodoApp.controller.auth.PasswordChangeRequest;
-import com.integrify.TodoApp.controller.auth.SigninRequest;
-import com.integrify.TodoApp.controller.auth.SignupRequest;
+import com.integrify.TodoApp.models.AuthResponse;
+import com.integrify.TodoApp.models.PasswordChangeRequest;
+import com.integrify.TodoApp.models.SigninRequest;
+import com.integrify.TodoApp.models.SignupRequest;
 import com.integrify.TodoApp.models.Role;
 import com.integrify.TodoApp.models.User;
 import com.integrify.TodoApp.repositories.UserRepository;
@@ -12,11 +12,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.CachingUserDetailsService;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -65,7 +61,7 @@ public class UserService {
 
     public ResponseEntity<?> changePassword(PasswordChangeRequest request, Principal principal) {
 
-        //Get logged in user
+        //Get current logged in user
         String username = principal.getName();
         User currentUser = this.userRepository.findUserByEmail(username);
 

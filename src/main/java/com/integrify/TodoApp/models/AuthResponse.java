@@ -1,4 +1,4 @@
-package com.integrify.TodoApp.controller.auth;
+package com.integrify.TodoApp.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
