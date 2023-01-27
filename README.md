@@ -1,5 +1,12 @@
 # TodoApp
-All the requirement are fullfilled. Optiontion are not done yet but soon will be done
+Back-end for a web app. A user needs to register a  user account with a email address and password. 
+After that user needs to sign in for getting a Bearer token. With the token user can get access to rest of the end points of todo app. 
+#Features
+-User creation and log in and change password
+-Spring boot web security with JWT 
+-PostgresQL database
+-Create a todo item with descreption 
+-Update a todo item
 
 #Instruction 
 To run this app after cloning from github. Install PostgresSQL database and create a database. 
