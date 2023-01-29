@@ -17,5 +17,5 @@ After that user needs to sign in for getting a Bearer token. With the token user
 - Go to the applicaiton.properties in resource folder. Put you own database name and password.<br>
 <br>
 #Bonous<br>
-To test the backends from postman i have includend a file called Postman_collection.json, simple include it to your postman and test it
+To test the backends from postman i have includend a file called Postman_collection.json, simply include it to your postman and test it
 
