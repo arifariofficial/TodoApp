@@ -5,7 +5,7 @@ After that user needs to sign in for getting a Bearer token. With the token user
 #Features<br>
 - Takes user details such as email and password and saves in database when email already doesn't exist in database<br>
 - User needs to sing in order to get Bearer token and with Bearer token user can get access to the rest of the api-es
-- User can change password when old password matches wtih the password that exist in the database for the user.<br>
+- User can change password when old password matches with the password that exist in the database for the user.<br>
 - PostgreSQL database<br>
 - Create a todo item with a descreption <br>
 - Update a todo item<br>
